@@ -9,29 +9,29 @@ import manjaro.mpb.MBCharacter;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import static manjaro.mpb.MBCharacter.MARIO;
+import static manjaro.mpb.MBCharacter.PIKACHU;
 
 
 @State(
         name = "manjaro.mpb.config.MarioProgressBarSettingsState",
         storages = @Storage("MarioProgressBarPluginSettings.xml")
 )
-public class MarioProgressBarSettingsState implements PersistentStateComponent<MarioProgressBarSettingsState> {
+public class PikachuProgressBarSettingsState implements PersistentStateComponent<PikachuProgressBarSettingsState> {
 
-  public MBCharacter selectedCharacter = MARIO;
+  public MBCharacter selectedCharacter = PIKACHU;
 
-  public static MarioProgressBarSettingsState getInstance() {
-    return ApplicationManager.getApplication().getService(MarioProgressBarSettingsState.class);
+  public static PikachuProgressBarSettingsState getInstance() {
+    return ApplicationManager.getApplication().getService(PikachuProgressBarSettingsState.class);
   }
 
   @Nullable
   @Override
-  public MarioProgressBarSettingsState getState() {
+  public PikachuProgressBarSettingsState getState() {
     return this;
   }
 
   @Override
-  public void loadState(@NotNull MarioProgressBarSettingsState state) {
+  public void loadState(@NotNull PikachuProgressBarSettingsState state) {
     XmlSerializerUtil.copyBean(state, this);
   }
 

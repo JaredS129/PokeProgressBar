@@ -6,9 +6,9 @@ import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
 
-public class MarioProgressBarConfigurable implements Configurable {
+public class PikachuProgressBarConfigurable implements Configurable {
 
-  private MarioProgressBarSettingsComponent mySettingsComponent;
+  private PikachuProgressBarSettingsComponent mySettingsComponent;
 
   // A default constructor with no arguments is required because this implementation
   // is registered as an applicationConfigurable EP
@@ -16,7 +16,7 @@ public class MarioProgressBarConfigurable implements Configurable {
   @Nls(capitalization = Nls.Capitalization.Title)
   @Override
   public String getDisplayName() {
-    return "Mario Progress Bar";
+    return "Pika-Progress Bar";
   }
 
   @Override
@@ -27,13 +27,13 @@ public class MarioProgressBarConfigurable implements Configurable {
   @Nullable
   @Override
   public JComponent createComponent() {
-    mySettingsComponent = new MarioProgressBarSettingsComponent();
+    mySettingsComponent = new PikachuProgressBarSettingsComponent();
     return mySettingsComponent.getPanel();
   }
 
   @Override
   public boolean isModified() {
-    MarioProgressBarSettingsState settings = MarioProgressBarSettingsState.getInstance();
+    PikachuProgressBarSettingsState settings = PikachuProgressBarSettingsState.getInstance();
     boolean modified = !mySettingsComponent.getChosenCharacter().equals(settings.selectedCharacter);
     modified |= mySettingsComponent.getChosenCharacter() != settings.selectedCharacter;
     return modified;
@@ -41,13 +41,13 @@ public class MarioProgressBarConfigurable implements Configurable {
 
   @Override
   public void apply() {
-    MarioProgressBarSettingsState settings = MarioProgressBarSettingsState.getInstance();
+    PikachuProgressBarSettingsState settings = PikachuProgressBarSettingsState.getInstance();
     settings.selectedCharacter = mySettingsComponent.getChosenCharacter();
   }
 
   @Override
   public void reset() {
-    MarioProgressBarSettingsState settings = MarioProgressBarSettingsState.getInstance();
+    PikachuProgressBarSettingsState settings = PikachuProgressBarSettingsState.getInstance();
     mySettingsComponent.setChosenCharacter(settings.selectedCharacter);
   }
 

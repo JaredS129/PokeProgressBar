@@ -7,7 +7,7 @@ import com.intellij.util.ui.GraphicsUtil;
 import com.intellij.util.ui.JBUI;
 import com.intellij.ui.scale.JBUIScale;
 import com.intellij.util.ui.UIUtil;
-import manjaro.mpb.config.MarioProgressBarSettingsState;
+import manjaro.mpb.config.PikachuProgressBarSettingsState;
 
 import javax.swing.plaf.basic.BasicGraphicsUtils;
 
@@ -30,7 +30,7 @@ public class ProgressBarUi extends BasicProgressBarUI {
 
     public ProgressBarUi() {
         try {
-            bimage = ImageIO.read(this.getClass().getResource("/bricks.png"));
+            bimage = ImageIO.read(this.getClass().getResource("/grass.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -115,7 +115,7 @@ public class ProgressBarUi extends BasicProgressBarUI {
             g.fill(area);
         }
 
-        Icons.SHELL.paintIcon(progressBar, g, offset2 - JBUIScale.scale(3), -JBUIScale.scale(-2));
+        Icons.POKEBALL.paintIcon(progressBar, g, offset2 - JBUIScale.scale(3), -JBUIScale.scale(-2));
 
         g.draw(new RoundRectangle2D.Float(1f, 1f, w - 2f - 1f, h - 2f - 1f, R, R));
         g.translate(0, -(c.getHeight() - h) / 2);
@@ -175,7 +175,7 @@ public class ProgressBarUi extends BasicProgressBarUI {
 
         g2.fill(new RoundRectangle2D.Float(2f * off, 2f * off, amountFull - JBUIScale.scale(5f), h - JBUIScale.scale(5f), JBUIScale.scale(7f), JBUIScale.scale(7f)));
 
-        MarioProgressBarSettingsState.getInstance().selectedCharacter.getIcon().paintIcon(progressBar, g2, amountFull - JBUIScale.scale(5), -JBUIScale.scale(1));
+        PikachuProgressBarSettingsState.getInstance().selectedCharacter.getIcon().paintIcon(progressBar, g2, amountFull - JBUIScale.scale(5), -JBUIScale.scale(1));
         g2.translate(0, -(c.getHeight() - h) / 2);
 
         if (progressBar.isStringPainted()) {

@@ -3,9 +3,9 @@ package manjaro.mpb;
 import javax.swing.*;
 
 public interface Icons {
-    ImageIcon MARIO = new ImageIcon(Icons.class.getResource("/mario.gif"), "Mario");
+    ImageIcon PIKACHU = new ImageIcon(Icons.class.getResource("/pikachu.gif"), "Pikachu");
 
-    ImageIcon LUIGI = new ImageIcon(Icons.class.getResource("/luigi.gif"), "Luigi");
+    ImageIcon JIGGLYPUFF = new ImageIcon(Icons.class.getResource("/jigglypuff.gif"), "Jigglypuff");
 
-    ImageIcon SHELL = new ImageIcon(Icons.class.getResource("/shell.gif"));
+    ImageIcon POKEBALL = new ImageIcon(Icons.class.getResource("/pokeball.gif"));
 }

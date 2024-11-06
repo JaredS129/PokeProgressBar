@@ -4,8 +4,8 @@ import javax.swing.*;
 
 public enum MBCharacter {
 
-    MARIO(Icons.MARIO),
-    LUIGI(Icons.LUIGI);
+    PIKACHU(Icons.PIKACHU),
+    JIGGLYPUFF(Icons.JIGGLYPUFF);
 
     private final ImageIcon icon;
 

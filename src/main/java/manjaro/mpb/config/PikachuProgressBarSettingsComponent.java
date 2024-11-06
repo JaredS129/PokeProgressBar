@@ -15,14 +15,14 @@ import java.util.List;
 import static manjaro.mpb.MBCharacter.*;
 
 
-public class MarioProgressBarSettingsComponent {
+public class PikachuProgressBarSettingsComponent {
 
     private final JPanel configMainPanel;
 
     private final List<JBRadioButton> charactersRadioButtons = new ArrayList<>();
 
-    public MarioProgressBarSettingsComponent() {
-        JBLabel title = new JBLabel("Choose your character :", UIUtil.ComponentStyle.REGULAR);
+    public PikachuProgressBarSettingsComponent() {
+        JBLabel title = new JBLabel("I choose you!", UIUtil.ComponentStyle.REGULAR);
         ButtonGroup characterSelectGroup = new ButtonGroup();
         FormBuilder formBuilder = FormBuilder.createFormBuilder().addComponent(title);
         for (MBCharacter character : values()) {
@@ -51,7 +51,7 @@ public class MarioProgressBarSettingsComponent {
         return charactersRadioButtons.stream()
                 .filter(AbstractButton::isSelected).findFirst()
                 .map(radioButton -> valueOf(radioButton.getText().toUpperCase()))
-                .orElse(MARIO);
+                .orElse(PIKACHU);
     }
 
     public void setChosenCharacter(@NotNull MBCharacter newBros) {

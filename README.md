@@ -1,17 +1,17 @@
-# MarioProgressBar
+# PokeProgressBar
 
-The Mario progress bar for IntelliJ IDEA and other JetBrains IDEs.
+The Pikachu progress bar for IntelliJ IDEA and other JetBrains IDEs.
 
 [![Version](https://img.shields.io/jetbrains/plugin/v/14708-mario-progress-bar)](https://plugins.jetbrains.com/plugin/14708-mario-progress-bar/versions)
 [![Rating](https://img.shields.io/jetbrains/plugin/r/rating/14708-mario-progress-bar)](https://plugins.jetbrains.com/plugin/14708-mario-progress-bar/reviews)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/14708-mario-progress-bar)](https://plugins.jetbrains.com/plugin/14708-mario-progress-bar)
 
-![MarioDeterminateBar](https://i.imgur.com/3ry0GOy.gif)
-![LuigiDeterminateBar](https://i.imgur.com/CQPjfTb.gif)
+![PikachuDeterminateBar](https://i.imgur.com/3ry0GOy.gif)
+![JigglyPuffDeterminateBar](https://i.imgur.com/CQPjfTb.gif)
 
 ![MarioIndeterminateBar](https://i.imgur.com/fdUDmZI.gif)
 
-This is the [Mario Progress Bar](https://plugins.jetbrains.com/plugin/14708-mario-progress-bar/versions) for [JetBrains IntelliJ IDEA](https://www.jetbrains.com/idea/) based on the Nyan Progress Bar by Dmitry Batkovitch. It display Mario with some bricks for the basic bar and a Koopa Shell for the indeterminate one.
+This is the [Pikachu Progress Bar](https://plugins.jetbrains.com/plugin/14708-mario-progress-bar/versions) for [JetBrains IntelliJ IDEA](https://www.jetbrains.com/idea/) based on the Nyan Progress Bar by Dmitry Batkovitch. It displays your chosen Pokemon with some grass for the basic bar and a PokeBall for the indeterminate one.
 
 ## Configuration
 
